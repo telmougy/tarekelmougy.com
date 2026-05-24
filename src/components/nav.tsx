@@ -36,6 +36,11 @@ export function Nav() {
         <a
           href="#top"
           aria-label="Tarek Elmougy — Home"
+          onClick={(e) => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: "smooth" });
+            window.dispatchEvent(new Event("replay-hero"));
+          }}
           className="relative block h-10 w-10 overflow-hidden rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent-from)]"
         >
           <Image

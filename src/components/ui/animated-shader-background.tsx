@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import { useTheme } from "next-themes";
 import * as THREE from "three";
 
 const vertexShader = /* glsl */ `
@@ -83,10 +84,12 @@ export function AnimatedShaderBackground({
   className,
 }: AnimatedShaderBackgroundProps) {
   const containerRef = useRef<HTMLDivElement>(null);
+  const { resolvedTheme } = useTheme();
 
   useEffect(() => {
     const container = containerRef.current;
     if (!container) return;
+    if (resolvedTheme !== "dark") return;
 
     const prefersReducedMotion = window.matchMedia(
       "(prefers-reduced-motion: reduce)",
@@ -142,7 +145,7 @@ export function AnimatedShaderBackground({
       material.dispose();
       renderer.dispose();
     };
-  }, []);
+  }, [resolvedTheme]);
 
   return <div ref={containerRef} aria-hidden className={className} />;
 }
