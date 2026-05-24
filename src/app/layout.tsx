@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Space_Grotesk, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
+import { AnimatedShaderBackground } from "@/components/ui/animated-shader-background";
 import { profile } from "@/data/cv";
 
 const inter = Inter({
@@ -85,6 +86,7 @@ export default function RootLayout({
     >
       <body className="min-h-full">
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
+          <AnimatedShaderBackground className="pointer-events-none fixed inset-0 -z-10 h-screen w-screen opacity-40 dark:opacity-60" />
           {children}
         </ThemeProvider>
         <script
