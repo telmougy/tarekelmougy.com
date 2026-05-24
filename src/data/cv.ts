@@ -14,7 +14,7 @@ export type SkillGroup = {
 
 export const profile = {
   name: "Tarek Elmougy",
-  roles: ["Senior SDET", "Senior QA Automation Engineer", "Test Architect"],
+  roles: ["Senior QA Automation Engineer", "Senior SDET", "Test Architect"],
   pitch:
     "I architect scalable QA automation frameworks from scratch and ensure release quality across web, mobile, API, and embedded systems — across Fintech, SaaS, Web3, and Automotive.",
   location: "Cairo, Egypt — Open to Remote / Global",

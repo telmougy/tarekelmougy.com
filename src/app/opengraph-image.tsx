@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 import { profile } from "@/data/cv";
 
-export const alt = "Tarek Elmougy — Senior SDET & QA Automation Engineer";
+export const alt = "Tarek Elmougy — Senior QA Automation Engineer & SDET";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -52,7 +52,7 @@ export default function OpenGraphImage() {
             {profile.name}
           </div>
           <div style={{ fontSize: 38, fontWeight: 500, color: "#ededed" }}>
-            Senior SDET · QA Automation Engineer · Test Architect
+            Senior QA Automation Engineer · SDET · Test Architect
           </div>
           <div style={{ fontSize: 24, color: "#9ca3af", maxWidth: 1040 }}>
             {profile.pitch}

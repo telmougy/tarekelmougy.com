@@ -28,13 +28,13 @@ const siteUrl = "https://tarekelmougy.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "Tarek Elmougy — Senior SDET & QA Automation Engineer",
+  title: "Tarek Elmougy — Senior QA Automation Engineer & SDET",
   description: profile.pitch,
   authors: [{ name: profile.name }],
   keywords: [
     "Tarek Elmougy",
+    "Senior QA Automation Engineer",
     "Senior SDET",
-    "QA Automation Engineer",
     "Test Architect",
     "Playwright",
     "Cypress",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     "Fintech QA",
   ],
   openGraph: {
-    title: "Tarek Elmougy — Senior SDET & QA Automation Engineer",
+    title: "Tarek Elmougy — Senior QA Automation Engineer & SDET",
     description: profile.pitch,
     url: siteUrl,
     siteName: "Tarek Elmougy",
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Tarek Elmougy — Senior SDET & QA Automation Engineer",
+    title: "Tarek Elmougy — Senior QA Automation Engineer & SDET",
     description: profile.pitch,
   },
   robots: {
@@ -67,7 +67,7 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "Person",
     name: profile.name,
-    jobTitle: "Senior SDET / Senior QA Automation Engineer",
+    jobTitle: "Senior QA Automation Engineer / Senior SDET",
     email: `mailto:${profile.email}`,
     url: siteUrl,
     sameAs: [profile.linkedin, profile.github],
