@@ -57,6 +57,10 @@ body {
   }
 }
 
+@utility bg-gradient-conic {
+  background-image: conic-gradient(var(--tw-gradient-stops));
+}
+
 .gradient-text {
   background: linear-gradient(135deg, var(--accent-from) 0%, var(--accent-to) 100%);
   -webkit-background-clip: text;
